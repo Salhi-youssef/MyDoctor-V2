@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   startTime() async {
-    var duration = new Duration(seconds: 4);
+    var duration = new Duration(seconds: 3);
     return new Timer(duration, route);
   }
 
@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xff011824),
         body: Container(
           width: double.infinity,
           child: Column(
@@ -50,17 +50,8 @@ class _SplashScreenState extends State<SplashScreen> {
                       'assets/images/logo.png',
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
-                    GradientText(
-                      'MyDoctor',
-                      gradient: LinearGradient(colors: [
-                        Color(0xff42C5BB),
-                        Color(0xff25AEE0),
-                      ]),
-                      style:
-                          TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
-                    )
                   ],
                 ),
                 Image.asset(
